@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/queries.css" />
+
+  <!-- js -->
+  <script defer src="../js/nav.js"></script>
+  <script defer src="../js/tabs.js"></script>
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="crew">
+
+  <!-- ------------------- header ------------------ -->
+   <header class="header flex">
+    <div>
+      <img src="../assets/shared/logo.svg" alt="space travel logo" class="logo">
+    </div>
+    <button class="nav-toggle-btn">
+      <span class="sr-only">menu</span>
+    </button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="nav indicators flex">
+            <li>
+              <a href="../index.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span aria-hidden="true">00</span>Home</a>
+            </li>
+            <li>
+              <a href="destination.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span aria-hidden="true">01</span>Destination</a>
+            </li>
+            <li class="active">
+              <a href="crew.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span aria-hidden="true">02</span>Crew</a>
+            </li>
+            <li>
+              <a href="technology.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span aria-hidden="true">03</span>Technology</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- ------------------- main content ------------------ -->
+  <main class="grid-container grid-container--crew flow">
+    <h1 class="numbered-title"><span>02</span> Meet your crew</h1>
+  
+    <article class="crew-details flow">
+      <h2 class="fs-600 uppercase ff-bellefair">Commander</h2>
+      <p class="fs-700 uppercase ff-bellefair">Douglas Hurley</p>
+    
+      <p class="text-accent ff-300 p-content">
+        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+      </p>  
+    </article>
+
+    <div class="crew-dots dot-indicators flex" role="tab-list">
+      <button id="commander" class="active" role="tab"><span class="sr-only">Commander</span></button>
+      <button id="mission specialist" role="tab"><span class="sr-only">Mission Specialist</span></button>
+      <button id="pilot" role="tab"><span class="sr-only">Pilot</span></button>
+      <button id="flight engineer" role="tab"><span class="sr-only">Flight Engineer</span></button>
+    </div>
+
+    <picture class="crew-img">
+      <source srcset="../assets/crew/image-douglas-hurley.webp" type="image/webp">
+      <img src="../assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">
+    </picture>
+  </main>
+
+  <!--
+
+  ------------------
+  Commander
+  Douglas Hurley
+
+  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+  and former NASA astronaut. He launched into space for the third time as 
+  commander of Crew Dragon Demo-2.
+  
+  -------------------
+  Flight Engineer
+  Anousheh Ansari
+
+  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+  fly to the ISS, and the first Iranian in space. 
+  
+  ----------------
+  Mission Specialist
+  Mark Shuttleworth
+
+  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+  African to travel to space as a space tourist.
+  -->
+</body>
+</html>

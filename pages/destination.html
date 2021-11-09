@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/queries.css" />
+
+  <!-- js -->
+  <script defer src="../js/nav.js"></script>
+  <script defer src="../js/tabs.js"></script>
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="destination">
+
+  <!-- ------------------- header ------------------ -->
+  <header class="header flex">
+    <div>
+      <img src="../assets/shared/logo.svg" alt="space travel logo" class="logo">
+    </div>
+    <button class="nav-toggle-btn">
+      <span class="sr-only">menu</span>
+    </button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="nav indicators flex">
+            <li>
+              <a href="../index.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span aria-hidden="true">00</span>Home</a>
+            </li>
+            <li class="active">
+              <a href="destination.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span aria-hidden="true">01</span>Destination</a>
+            </li>
+            <li>
+              <a href="crew.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span aria-hidden="true">02</span>Crew</a>
+            </li>
+            <li>
+              <a href="technology.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span aria-hidden="true">03</span>Technology</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+
+  <!-- ------------------- main content ------------------ -->
+  <main class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title"><span>01</span> Pick your destination</h1>
+    <!-- <div class="destination-img"> -->
+      <picture class="destination-img">
+        <source srcset="../assets/destination/image-moon.webp" type="image/webp">
+        <img src="../assets/destination/image-moon.png" alt="the moon">
+      </picture>
+    <!-- </div> -->
+    <div class="destination-btn tab-list indicators flex" role="tab-list">
+      <button id="moon" class="text-white uppercase ff-barlow-condensed ls-2 active" role="tab">moon</button>
+      <button id="mars" class="text-white uppercase ff-barlow-condensed ls-2" role="tab">mars</button>
+      <button id="europa" class="text-white uppercase ff-barlow-condensed ls-2" role="tab">europa</button>
+      <button id="titan" class="text-white uppercase ff-barlow-condensed ls-2" role="tab">Titan</button> 
+    </div>
+    <article class="destination-content">
+      <h2 class="ff-bellefair fs-800 text-white uppercase">Moon</h2>        
+      <p class="text-accent p-content">
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+      </p>        
+      <div class="planet-meta flex">
+        <div class="distance">
+          <h3 class="ff-barlow-condensed fs-200 text-accent uppercase ls-3">Avg. Distance</h3>
+          <p class="ff-bellefair uppercase text-white">384,400 km</p>
+        </div>
+        <div class="time">
+          <h3 class="ff-barlow-condensed fs-200 text-accent uppercase ls-3">Est. travel time</h3>
+          <p class="ff-bellefair uppercase text-white">3 days</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+</body>
+</html>
