@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+
+  <!-- js -->
+  <script defer src="js/nav.js"></script>
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="home">
+
+  <!-- ------------------- header ------------------ -->
+  <header class="header flex">
+    <div>
+      <img src="assets/shared/logo.svg" alt="space travel logo" class="logo">
+    </div>
+    <button class="nav-toggle-btn">
+      <span class="sr-only">menu</span>
+    </button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="nav indicators flex">
+            <li class="active">
+              <a href="index.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span>00</span>Home</a>
+            </li>
+            <li>
+              <a href="pages/destination.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span>01</span>Destination</a>
+            </li>
+            <li>
+              <a href="pages/crew.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span>02</span>Crew</a>
+            </li>
+            <li>
+              <a href="pages/technology.html" class="uppercase text-white ls-2 ff-barlow-condensed"><span>03</span>Technology</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- ------------------- main content ------------------ -->
+  <main class="grid-container grid-container--home">
+    <div>
+      <h1 class="text-accent fs-500 ff-barlow-condensed uppercase ls-1">So, you want to travel to <span class="display-block fs-900 text-white ff-bellefair">Space</span></h1>
+      <p class="ff-barlow text-accent p-content">
+        Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+      </p>
+    </div>
+
+    <div>
+      <a href="pages/destination.html" class="explore-btn uppercase ff-bellefair text-dark bg-white">Explore</a>
+    </div>
+  </main>
+
+</body>
+</html>
