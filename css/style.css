@@ -499,7 +499,7 @@ body{
 
 .tech-tabs > *{
   padding: 0.95rem 1.3rem 0.9rem;
-  border: 2px solid hsl(var(--color-white));
+  border: 2px solid hsl(var(--color-white) / 0.3);
   background: transparent;
   color:hsl(var(--color-white));
   border-radius: 50%;
@@ -508,7 +508,10 @@ body{
 }
 
 .tech-tabs > *:focus,
-.tech-tabs > *:hover,
+.tech-tabs > *:hover{
+  border-color: var(--color-white);
+}
+
 .tech-tabs > *.active{
   background: hsl(var(--color-white));
   color: hsl(var(--color-dark));
