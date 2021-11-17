@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/space-tourism-website-igWosQVmb)
-- Live Site URL: [Add live site URL here](https://space-tourism-developingweb.vercel.app)
+- [Solution URL](https://www.frontendmentor.io/solutions/space-tourism-website-igWosQVmb)
+- [Live Site URL](https://space-tourism-developingweb.vercel.app)
 
 ## My process
 
@@ -33,3 +33,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [Arsh Goyal](https://www.frontendmentor.io/profile/developingWeb)
+- Github - [@developingWeb](https://www.github.com/developingWeb)
